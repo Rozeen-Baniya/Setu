@@ -50,4 +50,9 @@ Setu is a cross-platform project (web and mobile) that aims to bridge communicat
 - License: TBD (will be added soon).
 - We aim to be open and community-driven — Code of Conduct will be included in the repo.
 
-## Stay Tuned 
+## 
+
+░▒█▀▀▀█░█▀▀░▀█▀░█░▒█░░░▒█▀▀▄░▄▀▀▄░█▀▄▀█░░▀░░█▀▀▄░█▀▀▀░░░▒█▀▀▀█░▄▀▀▄░▄▀▀▄░█▀▀▄
+░░▀▀▀▄▄░█▀▀░░█░░█░▒█░░░▒█░░░░█░░█░█░▀░█░░█▀░█░▒█░█░▀▄░░░░▀▀▀▄▄░█░░█░█░░█░█░▒█
+░▒█▄▄▄█░▀▀▀░░▀░░░▀▀▀░░░▒█▄▄▀░░▀▀░░▀░░▒▀░▀▀▀░▀░░▀░▀▀▀▀░░░▒█▄▄▄█░░▀▀░░░▀▀░░▀░░▀
+
