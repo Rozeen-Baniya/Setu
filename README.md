@@ -15,7 +15,7 @@
 ---
 
 ## 📖 About
-Setu is a cross-platform project (web and mobile) that aims to bridge communication between Nepali Sign Language users and non-signers by providing real-time translation between NSL and Nepali (and eventually other languages). The project is currently under active development.
+Setu is a cross-platform project (web and mobile) that aims to bridge communication between Nepali Sign Language users and non-signers by providing real-time translation between NSL and Nepali (and eventually other languages). The project is currently under active development. We hope to bring this to you very soon.
 
 ## 🚀 Current status
 - Core idea and UX sketched.
@@ -29,7 +29,7 @@ Setu is a cross-platform project (web and mobile) that aims to bridge communicat
 ## 🎯 Key goals
 - Real-time NSL recognition from camera input.
 - Accurate mapping from NSL gestures to Nepali text & speech.
-- Two-way translation where text/voice input maps to animated NSL guidance.
+- Two-way translation where text/voice input maps to animated NSL guidance.(Future Upgrade)
 - Privacy-first design (on-device processing where possible).
 
 ## 🗺 Roadmap (high level)
@@ -49,3 +49,5 @@ Setu is a cross-platform project (web and mobile) that aims to bridge communicat
 ## 📜 License & Code of Conduct
 - License: TBD (will be added soon).
 - We aim to be open and community-driven — Code of Conduct will be included in the repo.
+
+## Stay Tuned 
