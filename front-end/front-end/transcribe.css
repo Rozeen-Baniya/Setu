@@ -1,0 +1,258 @@
+/* Transcribe Page Specific Styles */
+
+/* Main Content Area */
+.main-content {
+    background: #F8FAFC;
+    min-height: calc(100vh - 200px);
+    padding: 2rem 0;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* Content Sections */
+.content-section {
+    background: white;
+    border: 1px solid #AEC6E4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    background: #2C5282;
+    padding: 0.5rem; /* Reduced padding to make it thinner */
+    text-align: center;
+}
+
+.section-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 0.9rem; /* Slightly reduced font size */
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem; /* Reduced padding for thinner appearance */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.section-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.content-panel {
+    padding: 2rem;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Left Column - Start Translating */
+.left-column .content-panel {
+    min-height: 500px;
+}
+
+.live-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #4A5C7A;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.live-dot {
+    width: 12px;
+    height: 12px;
+    background: #FF0000;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.live-text {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.timer {
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.translation-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7FAFC;
+    border: 2px dashed #CBD5E0;
+    border-radius: 10px;
+}
+
+.camera-placeholder {
+    text-align: center;
+    color: #718096;
+}
+
+.camera-placeholder p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Remove black background from camera feed when inactive */
+#cameraFeed {
+    width: 100%;
+    height: auto; /* Adjust height to content */
+    object-fit: contain; /* Ensures content fits without black background */
+    border-radius: 10px;
+    background: transparent; /* Remove black background */
+}
+
+/* Camera Control Buttons */
+.camera-controls {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.camera-btn {
+    background: #2C5282;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.camera-btn:hover {
+    background: #1A365D;
+}
+
+/* Right Column */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right-column .content-panel {
+    min-height: 300px;
+}
+
+.right-column .content-section {
+    margin-left: -1rem;
+    width: calc(100% + 1rem);
+}
+
+.demo-placeholder,
+.output-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #718096;
+}
+
+.play-icon,
+.text-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.demo-placeholder p,
+.output-placeholder p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .left-column .content-panel {
+        min-height: 400px;
+    }
+    
+    .right-column {
+        gap: 1.5rem;
+    }
+    
+    .right-column .content-section {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1.5rem 0;
+    }
+    
+    .content-panel {
+        padding: 1.5rem;
+    }
+    
+    .left-column .content-panel {
+        min-height: 350px;
+    }
+    
+    .right-column .content-panel {
+        min-height: 250px;
+    }
+    
+    .right-column .content-section {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 1rem 0;
+    }
+    
+    .content-wrapper {
+        gap: 1rem;
+    }
+    
+    .content-panel {
+        padding: 1rem;
+    }
+    
+    .left-column .content-panel {
+        min-height: 300px;
+    }
+    
+    .right-column .content-panel {
+        min-height: 200px;
+    }
+    
+    .right-column .content-section {
+        margin-left: 0;
+        width: 100%;
+    }
+}

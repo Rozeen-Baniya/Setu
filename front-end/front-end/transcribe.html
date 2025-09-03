@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcribe - Setu</title>
+    <link rel="icon" href="images/hhf.png">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="transcribe.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"></head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-shell">
+            <nav class="nav-container">
+                <a href="home.html" class="logo">
+                    <img src="images/hhf.png" alt="Setu Logo" class="logo-icon">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="transcribe.html">Transcribe</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+                <button class="login-btn">Login</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Left Column - Start Translating -->
+                <div class="left-column">
+                    <div class="content-section">
+                        <div class="section-header">
+                            <button class="section-btn">Start Translating</button>
+                        </div>
+                        <div class="content-panel">
+                            <div class="live-indicator">
+                                <div class="live-dot"></div>
+                                <span class="live-text">LIVE</span>
+                                <span class="timer" id="timer">00:00:00</span>
+                            </div>
+                            <div class="translation-area">
+                                <div class="camera-placeholder">
+                                    <!-- Webcam Feed -->
+                                    <video id="cameraFeed" autoplay playsinline></video>
+                                    <p>Camera feed will appear here</p>
+                                    <div class="camera-controls">
+                                        <button class="camera-btn">Start Translating</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column">
+                    <!-- Watch Demo Section -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <button class="section-btn">Watch Demo</button>
+                        </div>
+                        <div class="content-panel">
+                            <div class="demo-placeholder">
+                                <div class="play-icon"></div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Translation Section -->
+                    <div class="content-section">
+                        <div class="section-header">
+                            <button class="section-btn">Translation</button>
+                        </div>
+                        <div class="content-panel">
+                            <div class="translation-output">
+                                <div class="output-placeholder">
+                                    <div class="text-icon"></div>
+                                    <p>  Waiting for translation...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="transcribe.html">Transcribe</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="about.html#contact-us">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Download the Setu App for free</h3>
+                <div class="app-store-buttons">
+                    <a href="#" class="app-store-btn">
+                        <img src="images/googleplay.PNG" alt="Google Play">
+                    </a>
+                    <a href="#" class="app-store-btn">
+                        <img src="images/appstore.PNG" alt="App Store">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="images/email.PNG" alt="Email Icon" class="contact-icon">
+                        <span>setu_info@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/phonee.PNG" alt="Phone Icon" class="contact-icon">
+                        <span>+977 9848000000</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/locationn.PNG" alt="Location Icon" class="contact-icon">
+                        <a 
+                        href="https://www.google.com/maps/search/?api=1&query=Maitidevi+Kathmandu" 
+                        target="_blank" 
+                        class="location-link">
+                        Maitidevi, Kathmandu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Setu, All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
